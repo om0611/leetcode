@@ -19,7 +19,7 @@ Output: 6
 Explanation: A possible sequence is: A -> B -> C -> D -> A -> B.
 
 Constraints:
-1 <= tasks.length <= 104
+1 <= tasks.length <= 10^4
 tasks[i] is an uppercase English letter.
 0 <= n <= 100
 '''
@@ -28,6 +28,10 @@ tasks[i] is an uppercase English letter.
 # At each iteration, we should add the most frequent task. We could use a max heap for this.
 # We need to store the tasks that are on cooldown. We could use a queue for this.
 # We need to keep track of time.
+
+
+# Let m == len(tasks). Then, the runtime is O(m).
+
 
 from collections import Counter, deque
 import heapq
