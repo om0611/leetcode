@@ -20,7 +20,8 @@ s consist of only digits and English letters.
 # At each char, consider it to be the middle char of a palindrome and expand outwards.
 # Check odd length case and even length case individually.
 
-# Runtime: O(n^2)
+# Runtime: O(n^2) because we are iterating over each char in the input string, which is O(n), and
+# for each char we expand outwards, which is O(n). 
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
