@@ -25,7 +25,8 @@ s consists of lowercase English letters.
 # Consider odd length case and even length case individually.
 
 
-# Runtime: O(n^2)
+# Runtime: O(n^2) because we are iterating over each char in the input string, which is O(n), and
+# for each char we expand outwards, which is O(n). 
 
 
 class Solution:
