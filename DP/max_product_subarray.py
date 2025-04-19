@@ -20,7 +20,8 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 # ending at that element. Use the max product to update the result variable at each iteration.
 # Handle the edge case where the element is 0.
 
-# Runtime: O(n)
+# Runtime: O(n) because we are iterating over each number in nums and doing constant work within the loop body.
+# Space: O(1) because we are only using constant extra space.
 
 class Solution:
     def maxProduct(self, nums: list[int]) -> int:
