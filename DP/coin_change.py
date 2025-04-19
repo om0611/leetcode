@@ -23,8 +23,9 @@ Output: 0
 # Bottom-up Approach: min number of coins to make up $1, $2, ..., $total. Store the results in an array.
 # For each amount, iterate through each coin, subtracting it from the amount and then fetching the stored value for the resulting amount.
 
-# Runtime: O(amount * len(coins))
-# Space: O(amount)
+# Runtime: O(amount * len(coins)) because we are iterating over each value from 0 to amount, and for each amount, we are iterating
+# over each coin in coins.
+# Space: O(amount) because we are using an array of size amount to store the min number of coins required to get to each amount from 0 to amount.
 
 class Solution:
     def coinChange(self, coins: list[int], amount: int) -> int:
