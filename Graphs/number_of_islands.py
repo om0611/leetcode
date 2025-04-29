@@ -29,6 +29,9 @@ Output: 3
 # During the traversal, add the location (i, j) to a visited set and explore its neighbours (top, right, bottom, left).
 # Once the traversal is complete, increment the counter for the number of islands.
 
+# Runtime: O(m * n) where m is the number of rows in the grid and n is the number of columns. This is because we 
+# iterate over each location in the grid exactly once within the loops, and the traversal algorithm
+# visits each location at most once. 
 
 class Solution:
     def numIslands(self, grid: list[list[str]]) -> int:
