@@ -19,8 +19,8 @@ example, [1, 2] and [2, 3] are non-overlapping.
 # overlap and applying the above rule in the case that two intervals overlap. 
 
 
-# Runtime: O(n) because we are iterating over all the intervals, but the work
-# done inside the loop is constant.
+# Runtime: O(nlog(n)) because sorting the intervals is O(nlog(n)). Iterating 
+# over all the intervals is O(n).
 
 # Space: O(1) because we are only storing the end value of the previous 
 # interval in memory, which is just a number.
